@@ -3,4 +3,21 @@
     <string name="SIGN">注册</string>
     <string name="LOGIN">登录</string>
     <string name="这货不是微信">这货不是微信</string>
+    <!--<String-array name="friend_list">
+        <item>赵</item>
+        <item>钱</item>
+        <item>孙</item>
+        <item>李</item>
+        <item>周</item>
+        <item>吴</item>
+        <item>郑</item>
+        <item>王</item>
+        <item>何</item>
+        <item>吕</item>
+        <item>施</item>
+        <item>张</item>
+
+
+
+    </String-array>-->
 </resources>
