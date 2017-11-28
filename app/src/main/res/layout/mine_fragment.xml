@@ -12,7 +12,6 @@
     android:weightSum="1">
 
     <TextView
-        android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:background="#DFE1E0" />
@@ -40,7 +39,7 @@
             android:layout_toRightOf="@+id/tx"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
-            android:text="login"
+            android:text="假装已经登录"
             android:textSize="22sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
@@ -48,7 +47,6 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="28dp"
         tools:ignore="InefficientWeight" />
@@ -64,45 +62,59 @@
             android:layout_height="match_parent"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
-            android:text="personal"
-            android:textSize="22sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffffff">
-
-        <TextView
-            android:layout_width="match_parent"
-
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="card"
-            android:textSize="22sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffffff">
-
-        <TextView
-            android:layout_width="match_parent"
-
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="biaoqing"
+            android:text="相册（当然是空的啦）"
             android:textSize="22sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <TextView
+            android:id="@+id/textView13"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="卡包（其实没卵用）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="表情（反正是用来浪费的）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:background="#DFE1E0" />
@@ -116,9 +128,10 @@
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
-            android:text="setting"
+            android:text="设置（有没有用自己意会一下）"
             android:textSize="22sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>

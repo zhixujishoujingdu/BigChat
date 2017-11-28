@@ -3,12 +3,165 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#DFE1E0"
+    android:weightSum="1"
+    tools:ignore="ExtraText"><![CDATA[
+    android:weightSum="1">
+
+
+
+
+
+
+
+    ]]>
 
     <TextView
-        android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="动态界面"
+        tools:ignore="HardcodedText"
+        android:layout_weight="0.00" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="#ffffffff">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:text="朋友圈（没朋友哪来的圈）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
         tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="扫一扫（首富也要去乞讨）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0.00"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="摇一摇（摇不到外婆桥）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="游戏（穷屌丝的真爱）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0.00"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="购物（这里不卖女朋友）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        tools:ignore="HardcodedText" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="大程序（毕竟是个假的微信）"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
 </LinearLayout>

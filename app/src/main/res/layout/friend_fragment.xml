@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView12"
+    <ListView
+        android:id="@+id/friend_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="好友界面"
-        tools:ignore="HardcodedText" />
+        android:layout_height="match_parent" />
+
 </LinearLayout>
