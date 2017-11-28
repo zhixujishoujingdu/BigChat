@@ -3,18 +3,13 @@ package com.example.zqx.bigchat;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 //import android.support.v4.app.ListFragment;
 import android.support.v4.app.ListFragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
-import java.util.zip.Inflater;
 
 /**
  * Created by Zqx on 2017/11/25.
@@ -43,7 +38,7 @@ public class FriendFragment extends ListFragment{
     private class MyAdapter extends BaseAdapter{
 
         @Override
-        //数组长度
+
         public int getCount() {
             return friend_list.length;
         }
@@ -63,18 +58,17 @@ public class FriendFragment extends ListFragment{
         public View getView(int position, View convertView, ViewGroup parent) {
             View view;
             if(convertView == null){
-                view = View.inflate(getActivity(),R.layout.item,null);
+                view = View.inflate(getActivity(),R.layout.item_friends,null);
             }else{
                 view = convertView;
             }
-            text = (TextView) view.findViewById(R.id.item_textview);
+            text = (TextView) view.findViewById(R.id.item_friend);
             text.setText(friend_list[position]);
 
             return view;
 
         }
     }
-
 
 }
 
