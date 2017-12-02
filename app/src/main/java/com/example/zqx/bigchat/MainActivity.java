@@ -1,19 +1,14 @@
 package com.example.zqx.bigchat;
 
 import android.os.Bundle;
-
-
 import android.support.v4.app.Fragment;
-//import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -82,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.mineBtn:
                 replaceFragment(new MineFragment());
+                break;
+            default:
                 break;
         }
     }

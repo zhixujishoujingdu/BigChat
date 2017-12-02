@@ -38,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/tx"
             android:paddingLeft="15dp"
-            android:paddingTop="15dp"
+            android:paddingTop="25dp"
             android:text="假装已经登录"
             android:textSize="22sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
