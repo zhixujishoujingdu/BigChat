@@ -23,17 +23,17 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.66"
+            android:layout_height="215dp"
             android:contentDescription=""
-            app:srcCompat="@mipmap/ic_launcher"
+            android:src="@drawable/ying"
             tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_weight="0.03"
+            android:layout_weight="0.17"
+            android:paddingTop="10dp"
             android:text="BigChat"
             android:textAlignment="center"
             android:textSize="25sp"
@@ -44,10 +44,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_weight="0.04"
-            android:alpha="100"
+            android:layout_weight="0.19"
 
+            android:alpha="100"
             android:gravity="bottom|center"
+            android:paddingBottom="10dp"
             android:text="这货叫大话"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
