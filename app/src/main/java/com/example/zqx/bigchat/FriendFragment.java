@@ -2,38 +2,40 @@
 package com.example.zqx.bigchat;
 
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Zqx on 2017/11/25.
  */
-public class FriendFragment extends Fragment {
-    private List<FriendItem> friendList = new ArrayList<>();
+public class FriendFragment extends ListFragment {
+    List<FriendItem> friendList = new ArrayList<>();
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.friend_fragment, container, false);
-        ListView l2 =(ListView) view.findViewById(android.R.id.list);
+        ListView listView =(ListView) view.findViewById(android.R.id.list);
         initFriends();
-        FriendAdapter adapter = new FriendAdapter(getActivity(),R.layout.item_friends,friendList
-        );
-        l2.setAdapter(adapter);
+        FriendAdapter adapter = new FriendAdapter(getActivity(),R.layout.item_friends,friendList);
+        listView.setAdapter(adapter);
         return view;
     }
 
 
-    private void initFriends() {
-        for(int i=0;i<2;i++) {
+    public void initFriends() {
+
             FriendItem Zhao = new FriendItem("赵一", R.drawable.cat);
             friendList.add(Zhao);
             FriendItem Qian = new FriendItem("钱二", R.drawable.dark);
@@ -52,7 +54,7 @@ public class FriendFragment extends Fragment {
             friendList.add(Wang);
             FriendItem He = new FriendItem("何九", R.drawable.sad);
             friendList.add(He);
-        }
+
     }
 }
 /*

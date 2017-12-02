@@ -19,6 +19,7 @@ public class FriendAdapter extends ArrayAdapter<FriendItem> {
     private int resourceId;
     public FriendAdapter( Context context,  int textViewResourceId, List<FriendItem> objects) {
         super(context, textViewResourceId, objects);
+        resourceId=textViewResourceId;
     }
     public View getView(int position, View covertView, ViewGroup parent){
         FriendItem friend = getItem(position);
