@@ -3,33 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/luwei"
     android:orientation="vertical"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:background="#DFE1E0"
+
     android:weightSum="1"
-    tools:ignore="ExtraText"><![CDATA[
-    android:weightSum="1">
-
-
-
-
-
-
-
-    ]]>
+    tools:ignore="ExtraText">
+    <![CDATA[android:weightSum="1">]]>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="HardcodedText"
-        android:layout_weight="0.00" />
+        android:layout_weight="0.00"
+        tools:ignore="HardcodedText" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.04"
-        android:background="#ffffffff">
+        android:background="#00000000">
 
         <TextView
             android:id="@+id/textView11"
@@ -57,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
-        android:background="#ffffffff">
+        android:background="#00000000">
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
-        android:background="#ffffffff">
+        android:background="#00000000">
 
         <TextView
             android:layout_width="wrap_content"
@@ -104,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
-        android:background="#ffffffff">
+        android:background="#00000000">
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
-        android:background="#ffffffff">
+        android:background="#00000000">
 
         <TextView
             android:layout_width="wrap_content"
@@ -147,11 +138,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
         tools:ignore="HardcodedText" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
-        android:background="#ffffffff">
+        android:background="#00000000">
 
         <TextView
             android:layout_width="wrap_content"

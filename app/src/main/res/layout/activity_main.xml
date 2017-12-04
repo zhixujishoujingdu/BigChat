@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="bottom"
+    android:background="@drawable/luwei"
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
@@ -40,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
+            android:background="#00000000"
             android:text="聊天"
             tools:ignore="ButtonStyle,HardcodedText,NestedWeights" />
 
@@ -49,6 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
+            android:background="#00000000"
             android:text="好友"
             tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -58,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
+            android:background="#00000000"
             android:text="动态"
             tools:ignore="ButtonStyle,HardcodedText" />
 
@@ -67,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
+            android:background="#00000000"
             android:text="我的"
             tools:ignore="ButtonStyle,HardcodedText" />
 

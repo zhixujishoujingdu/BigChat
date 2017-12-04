@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
+    android:background="@drawable/luwei"
     android:weightSum="1"
     tools:context="com.example.zqx.bigchat.SignActivity">
 
@@ -123,6 +124,7 @@
         android:id="@+id/signBtn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00000000"
         android:text="注册大话"
         tools:ignore="HardcodedText" />
 
