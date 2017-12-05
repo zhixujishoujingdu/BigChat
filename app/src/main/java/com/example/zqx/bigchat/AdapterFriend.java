@@ -15,17 +15,21 @@ import java.util.List;
  * Created by Zqx on 2017/12/2.
  */
 
-public class FriendAdapter extends ArrayAdapter<FriendItem> {
+public class AdapterFriend extends ArrayAdapter<ItemFriend> {
+
     private int resourceId;
-    public FriendAdapter( Context context,  int textViewResourceId, List<FriendItem> objects) {
+    public AdapterFriend(Context context, int textViewResourceId, List<ItemFriend> objects) {
         super(context, textViewResourceId, objects);
         resourceId=textViewResourceId;
     }
     public View getView(int position, View covertView, ViewGroup parent){
-        FriendItem friend = getItem(position);
+
+        ItemFriend friend = getItem(position);
         View view = LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
+
         ImageView friendImage=(ImageView)view.findViewById(R.id.friend_image);
         TextView friendName=(TextView)view.findViewById(R.id.friend_name);
+
         friendImage.setImageResource(friend.getImageId());
         friendName.setText(friend.getName());
         return view;

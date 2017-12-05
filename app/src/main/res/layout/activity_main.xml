@@ -7,10 +7,9 @@
     android:layout_gravity="bottom"
     android:background="@drawable/luwei"
     android:orientation="vertical"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
     android:weightSum="1"
-    tools:context="com.example.zqx.bigchat.MainActivity">
+    tools:context="com.example.zqx.bigchat.MainActivity"
+    android:baselineAligned="false">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,49 +30,42 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:orientation="horizontal"
+        android:background="#00000000"
         tools:ignore="InefficientWeight">
 
-        <Button
-            android:id="@+id/talkBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+        <ImageButton
+            android:id="@+id/ib_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00000000"
-            android:text="聊天"
-            tools:ignore="ButtonStyle,HardcodedText,NestedWeights" />
+            app:srcCompat="@drawable/cat"
+            tools:ignore="ContentDescription" />
 
-        <Button
-            android:id="@+id/friendBtn"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/ib_friend"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="#00000000"
-            android:text="好友"
-            tools:ignore="ButtonStyle,HardcodedText" />
+            app:srcCompat="@drawable/cat"
+            tools:ignore="ContentDescription" />
 
-        <Button
-            android:id="@+id/newsBtn"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/ib_news"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="#00000000"
-            android:text="动态"
-            tools:ignore="ButtonStyle,HardcodedText" />
+            app:srcCompat="@drawable/cat"
+            tools:ignore="ContentDescription" />
 
-        <Button
-            android:id="@+id/mineBtn"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/ib_mine"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="#00000000"
-            android:text="我的"
-            tools:ignore="ButtonStyle,HardcodedText" />
+            app:srcCompat="@drawable/cat"
+            tools:ignore="ContentDescription" />
 
     </LinearLayout>
 

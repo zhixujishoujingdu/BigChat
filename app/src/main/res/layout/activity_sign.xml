@@ -38,12 +38,13 @@
             tools:ignore="HardcodedText" />
 
         <EditText
-            android:id="@+id/editText2"
-            android:layout_width="241dp"
+            android:id="@+id/editText"
+            android:layout_width="303dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPersonName"
+            tools:ignore="InefficientWeight" />
 
     </LinearLayout>
 
@@ -61,12 +62,12 @@
             tools:ignore="HardcodedText" />
 
         <EditText
-            android:id="@+id/editText"
-            android:layout_width="303dp"
+            android:id="@+id/editText2"
+            android:layout_width="241dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             tools:ignore="InefficientWeight" />
 
     </LinearLayout>

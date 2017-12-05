@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -42,20 +43,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //-------------------------界面切换--------------------------------------
 
 
-    Button btn1,btn2,btn3,btn4;
+    ImageButton ib1,ib2,ib3,ib4;
  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1=(Button)findViewById(R.id.talkBtn);
-        btn1.setOnClickListener(this);
-        btn2=(Button)findViewById(R.id.friendBtn);
-        btn2.setOnClickListener(this);
-        btn3=(Button)findViewById(R.id.newsBtn);
-        btn3.setOnClickListener(this);
-        btn4=(Button)findViewById(R.id.mineBtn);
-        btn4.setOnClickListener(this);
+        ib1=(ImageButton) findViewById(R.id.ib_talk);
+        ib1.setOnClickListener(this);
+        ib2=(ImageButton) findViewById(R.id.ib_friend);
+        ib2.setOnClickListener(this);
+        ib3=(ImageButton)findViewById(R.id.ib_news);
+        ib3.setOnClickListener(this);
+        ib4=(ImageButton) findViewById(R.id.ib_mine);
+        ib4.setOnClickListener(this);
 
         replaceFragment(new TalkFragment());
 
@@ -66,16 +67,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.talkBtn:
+            case R.id.ib_talk:
                 replaceFragment(new TalkFragment());
                 break;
-            case R.id.friendBtn:
+            case R.id.ib_friend:
                 replaceFragment(new FriendFragment());
                 break;
-            case R.id.newsBtn:
+            case R.id.ib_news:
                 replaceFragment(new NewsFragment());
                 break;
-            case R.id.mineBtn:
+            case R.id.ib_mine:
                 replaceFragment(new MineFragment());
                 break;
             default:

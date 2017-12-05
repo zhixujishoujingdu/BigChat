@@ -3,7 +3,6 @@ package com.example.zqx.bigchat;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +16,7 @@ import java.util.List;
  * Created by Zqx on 2017/11/25.
  */
 public class FriendFragment extends ListFragment {
-    List<FriendItem> friendList = new ArrayList<>();
+    List<ItemFriend> friendList = new ArrayList<>();
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,89 +24,41 @@ public class FriendFragment extends ListFragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+
         View view = inflater.inflate(R.layout.friend_fragment, container, false);
         ListView listView =(ListView) view.findViewById(android.R.id.list);
+
         initFriends();
-        FriendAdapter adapter = new FriendAdapter(getActivity(),R.layout.item_friends,friendList);
+
+        AdapterFriend adapter = new AdapterFriend(getActivity(),R.layout.item_friends,friendList);
         listView.setAdapter(adapter);
+
         return view;
+
     }
 
 
     public void initFriends() {
 
-            FriendItem Zhao = new FriendItem("赵一", R.drawable.cat);
+            ItemFriend Zhao = new ItemFriend("赵一", R.drawable.cat);
             friendList.add(Zhao);
-            FriendItem Qian = new FriendItem("钱二", R.drawable.dark);
+            ItemFriend Qian = new ItemFriend("钱二", R.drawable.dark);
             friendList.add(Qian);
-            FriendItem Sun = new FriendItem("孙三", R.drawable.dog);
+            ItemFriend Sun = new ItemFriend("孙三", R.drawable.dog);
             friendList.add(Sun);
-            FriendItem Li = new FriendItem("李四", R.drawable.excuse);
+            ItemFriend Li = new ItemFriend("李四", R.drawable.excuse);
             friendList.add(Li);
-            FriendItem Zhou = new FriendItem("周五", R.drawable.gril);
+            ItemFriend Zhou = new ItemFriend("周五", R.drawable.gril);
             friendList.add(Zhou);
-            FriendItem Wu = new FriendItem("吴六", R.drawable.jack);
+            ItemFriend Wu = new ItemFriend("吴六", R.drawable.jack);
             friendList.add(Wu);
-            FriendItem Zheng = new FriendItem("郑七", R.drawable.plan);
+            ItemFriend Zheng = new ItemFriend("郑七", R.drawable.plan);
             friendList.add(Zheng);
-            FriendItem Wang = new FriendItem("王八", R.drawable.smoke);
+            ItemFriend Wang = new ItemFriend("王八", R.drawable.smoke);
             friendList.add(Wang);
-            FriendItem He = new FriendItem("何九", R.drawable.sad);
+            ItemFriend He = new ItemFriend("何九", R.drawable.sad);
             friendList.add(He);
 
     }
 }
-/*
-public class FriendFragment extends ListFragment{
-
-   private String[] friend_list={"赵一","钱二","孙三","李四","周五","吴六","郑七","王八","何九","吕十","施百","张千"};
-
-    private TextView text;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.friend_fragment,container,false);
-        setListAdapter(new MyAdapter());
-        return view;
-    }
-
-
-
-    private class MyAdapter extends BaseAdapter{
-
-        @Override
-
-        public int getCount() {
-            return friend_list.length;
-        }
-
-        @Override
-
-        public Object getItem(int position) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            View view;
-            if(convertView == null){
-                view = View.inflate(getActivity(),R.layout.item_friends,null);
-            }else{
-                view = convertView;
-            }
-            text = (TextView) view.findViewById(R.id.friend_name);
-            text.setText(friend_list[position]);
-
-            return view;
-
-        }
-    }
-
-}
-*/
 

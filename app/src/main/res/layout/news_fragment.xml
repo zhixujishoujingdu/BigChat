@@ -33,7 +33,7 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="15dp"
             android:text="朋友圈（没朋友哪来的圈）"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
     </RelativeLayout>
@@ -57,7 +57,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:text="扫一扫（首富也要去乞讨）"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 
@@ -81,7 +81,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:text="摇一摇（摇不到外婆桥）"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 
@@ -104,7 +104,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:text="游戏（穷屌丝的真爱）"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 
@@ -128,7 +128,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:text="购物（这里不卖女朋友）"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 
@@ -152,7 +152,7 @@
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:text="大程序（毕竟是个假的微信）"
-            android:textSize="22sp"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 

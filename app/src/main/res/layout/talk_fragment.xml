@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/luwei"
-    android:weightSum="1">
+    android:background="@drawable/luwei">
 
     <ListView
-        android:id="@+id/chat_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
 </LinearLayout>
