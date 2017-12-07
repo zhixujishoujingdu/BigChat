@@ -2,6 +2,7 @@ package com.example.zqx.bigchat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ import java.util.List;
  * Created by Zqx on 2017/11
  */
 
-public class TalkFragment extends ListFragment {
+public class TalkFragment extends Fragment {
 
     List<ItemTalk> talkList=new ArrayList<>();
     @Override
