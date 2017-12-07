@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/talk_bg"
     tools:context="com.example.zqx.bigchat.SendMessage"
     android:orientation="vertical">
 
@@ -19,28 +20,36 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_weight="0.84"
+        tools:ignore="InefficientWeight">
 
         <EditText
             android:id="@+id/message"
             android:layout_width="wrap_content"
-            android:layout_height="56dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_toLeftOf="@+id/send_mes"
+            android:layout_toStartOf="@+id/send_mes"
+            android:layout_weight="0.84"
             android:background="@drawable/editsharp"
-            tools:ignore="TextFields" />
+            tools:ignore="ObsoleteLayoutParam,TextFields" />
 
-        <Button
+        <ImageButton
             android:id="@+id/send_mes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.45"
-            android:text="send"
-            tools:ignore="HardcodedText" />
-
-    </LinearLayout>
+            android:layout_height="50dp"
+            android:layout_weight="0.28"
+            app:srcCompat="@drawable/send_mes"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
 </LinearLayout>

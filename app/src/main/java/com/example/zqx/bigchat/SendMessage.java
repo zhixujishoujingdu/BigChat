@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class SendMessage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sendmessage);
         listView = (ListView)findViewById(R.id.mes_l);
-        Button send = (Button) findViewById(R.id.send_mes);
+        ImageButton send = (ImageButton) findViewById(R.id.send_mes);
 
         initMessage();
         adapter = new AdapterMessage(SendMessage.this,R.layout.mes_item,msgList);

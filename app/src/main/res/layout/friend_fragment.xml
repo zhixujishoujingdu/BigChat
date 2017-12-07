@@ -4,7 +4,7 @@
     android:id="@+id/friend"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/luwei"
+    android:background="@drawable/talk_bg"
     android:orientation="vertical">
 
     <ListView
