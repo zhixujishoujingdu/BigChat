@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="bottom"
-    android:background="@drawable/luwei"
     android:orientation="vertical"
     android:weightSum="1"
     tools:context="com.example.zqx.bigchat.MainActivity"
@@ -31,40 +30,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:background="#D6D7D7"
         android:orientation="horizontal"
-        android:background="#00000000"
         tools:ignore="InefficientWeight">
 
         <ImageButton
             android:id="@+id/ib_talk"
-            android:layout_width="wrap_content"
+            android:layout_width="98dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cat"
+            app:srcCompat="@drawable/ib_talk1"
             tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/ib_friend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cat"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+
+            app:srcCompat="@drawable/ib_friend1"
             tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/ib_news"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cat"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+
+            app:srcCompat="@drawable/ib_news1"
             tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/ib_mine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:srcCompat="@drawable/ib_mine1"
             tools:ignore="ContentDescription" />
 
     </LinearLayout>

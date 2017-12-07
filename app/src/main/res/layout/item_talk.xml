@@ -23,6 +23,7 @@
             android:layout_gravity="center_horizontal"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
+            android:textSize="20sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
         <TextView
@@ -32,6 +33,7 @@
             android:layout_gravity="center_horizontal"
             android:paddingLeft="20dp"
             android:paddingTop="5dp"
+            android:textSize="14sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </LinearLayout>
 

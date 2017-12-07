@@ -1,10 +1,12 @@
 package com.example.zqx.bigchat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 
@@ -24,28 +26,27 @@ public class TalkFragment extends ListFragment {
 
 
     }
-
+    ListView talk_listView;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 
         View view = inflater.inflate(R.layout.talk_fragment,container,false);
-        ListView talk_listView=(ListView) view.findViewById(android.R.id.list);
+        talk_listView=(ListView) view.findViewById(android.R.id.list);
 
         initRecord();
 
         AdapterTalk talk_adapter=new AdapterTalk(getActivity(),R.layout.item_talk,talkList);
         talk_listView.setAdapter(talk_adapter);
-
+        talk_listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(),SendMessage.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-
-
-    }
 
     private void initRecord() {
         ItemTalk Zhao = new ItemTalk("赵一","hello",R.drawable.cat);

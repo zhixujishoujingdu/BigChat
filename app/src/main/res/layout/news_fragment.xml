@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/luwei"
     android:orientation="vertical"
 
     android:weightSum="1"
@@ -20,138 +20,200 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.04"
-        android:background="#00000000">
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dongtai"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:paddingLeft="5dp"
+            android:paddingTop="20dp"
+            android:text="朋友圈"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="0.00"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#e6e6e6"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/scan"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="扫一扫"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_toEndOf="@+id/imageView6" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0.00"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.03"
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/shark"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="摇一摇"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="0.00"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/game"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="游戏"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0.00"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/shopping"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView9"
+            android:layout_toRightOf="@+id/imageView9"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="购物"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_weight="0.07">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xiaochengxu"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/textView21"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="20dp"
-            android:paddingLeft="15dp"
-            android:text="朋友圈（没朋友哪来的圈）"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        tools:ignore="HardcodedText" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        android:background="#00000000">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:paddingLeft="15dp"
+            android:layout_toEndOf="@+id/imageView10"
+            android:layout_toRightOf="@+id/imageView10"
+            android:paddingLeft="5dp"
             android:paddingTop="15dp"
-            android:text="扫一扫（首富也要去乞讨）"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_weight="0.00"
-        android:text="TextView"
-        tools:ignore="HardcodedText" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        android:background="#00000000">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="摇一摇（摇不到外婆桥）"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        tools:ignore="HardcodedText" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        android:background="#00000000">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="游戏（穷屌丝的真爱）"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_weight="0.00"
-        android:text="TextView"
-        tools:ignore="HardcodedText" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        android:background="#00000000">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="购物（这里不卖女朋友）"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-    </RelativeLayout>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        tools:ignore="HardcodedText" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        android:background="#00000000">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
-            android:text="大程序（毕竟是个假的微信）"
+            android:text="大程序"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>

@@ -5,7 +5,7 @@
     android:id="@+id/mine"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/luwei"
+
     android:orientation="vertical"
     android:weightSum="1">
 
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_weight="0.07"
-        android:background="#00000000"
+        android:background="#e6e6e6"
         tools:ignore="InefficientWeight">
 
         <ImageView
@@ -27,6 +27,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="left|center"
 
+            android:paddingLeft="5dp"
             android:src="@drawable/yingtou"
             tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
 
@@ -34,15 +35,15 @@
             android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:paddingLeft="80dp"
             android:paddingTop="13dp"
             android:text="知溪"
             android:textSize="24sp"
-            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true" />
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
 
     </RelativeLayout>
@@ -50,19 +51,30 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="28dp"
+        android:background="#00000000"
         tools:ignore="InefficientWeight" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#00000000">
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/xiangce"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="match_parent"
 
             android:layout_height="40dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
             android:text="相册（当然是空的啦）"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
@@ -70,17 +82,26 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="2dp" />
+        android:layout_height="2dp"
+        android:background="#00000000" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#00000000">
+        android:background="#e6e6e6">
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#00000000" />
+            app:srcCompat="@drawable/kabao"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView13"
@@ -88,8 +109,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
             android:text="卡包（其实没卵用）"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
@@ -98,30 +121,39 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="2dp" />
+        android:layout_height="2dp"
+        android:background="#00000000" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#00000000">
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/biaoqing"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="match_parent"
 
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
             android:background="#00000000"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
             android:text="表情（反正是用来浪费的）"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:background="#00000000" />
@@ -129,17 +161,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#00000000">
+        android:background="#e6e6e6">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/setting"
+            tools:ignore="ContentDescription" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/textView14"
 
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:paddingLeft="15dp"
-            android:paddingTop="15dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
             android:text="设置（有没有用自己意会一下）"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
     </RelativeLayout>
 </LinearLayout>
